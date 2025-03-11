@@ -15,9 +15,9 @@ export const NavLinks = () => {
     ],
 
     works: [
-      { title: "redash", path: "http://empredash.netlify.app" },
-      { title: "Rp Clicks", path: "https://rpclicks.netlify.app" },
-      { title: "Tic-Tac-Toy", path: "https://tic-tac-toy-rp.netlify.app/" },
+      { title: "redash", path: "http://empredash.netlify.app", target: "_blank"},
+      { title: "Rp Clicks", path: "https://rpclicks.netlify.app", target: "_blank" },
+      { title: "Tic-Tac-Toy", path: "https://tic-tac-toy-rp.netlify.app/", target: "_blank" },
     ],
   };
 
@@ -38,7 +38,7 @@ export const NavLinks = () => {
         {links.map((item) => {
           return (
             <li key={item.title}>
-              <Link to={item.path}>{item.title}</Link>
+              <Link to={item.path} target = {item.target ? item.target : ""}>{item.title}</Link>
             </li>
           );
         })}
