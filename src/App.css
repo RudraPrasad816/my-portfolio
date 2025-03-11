@@ -506,6 +506,9 @@ nav a:hover {
   .about-section h3 {
     font-size: 18px;
   }
+  .contact-section p{
+    width: 80%;
+  }
 }
 
 @media (max-width: 646px) {
