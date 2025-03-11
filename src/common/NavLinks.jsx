@@ -16,8 +16,8 @@ export const NavLinks = () => {
 
     works: [
       { title: "redash", path: "http://empredash.netlify.app" },
-      { title: "resume", path: "/resume" },
-      { title: "Rp Clicks", path: "/rpclicks" },
+      { title: "Rp Clicks", path: "https://rpclicks.netlify.app" },
+      { title: "Tic-Tac-Toy", path: "https://tic-tac-toy-rp.netlify.app/" },
     ],
   };
 
