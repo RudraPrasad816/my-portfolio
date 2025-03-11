@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { PathProvider } from "./context/pathContext";
 import "./App.css";
 import { AnimatedRoutes } from "./components/AnimatedRoutes";
@@ -6,11 +6,11 @@ import { AnimatedRoutes } from "./components/AnimatedRoutes";
 function App() {
   return (
     <div id="container">
-      <BrowserRouter>
+      <HashRouter>
         <PathProvider>
           <AnimatedRoutes />
         </PathProvider>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
